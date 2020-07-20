@@ -63,10 +63,11 @@ namespace WebGentle_BookStore
             
             app.UseEndpoints(endpoints =>
             {
-                endpoints.Map("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!");
-                });
+                endpoints.MapDefaultControllerRoute();
+                //endpoints.Map("/", async context =>
+                //{
+                //    await context.Response.WriteAsync("Hello World!");
+                //});
             });
 
             //app.UseEndpoints(endpoints =>
